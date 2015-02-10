@@ -12,9 +12,8 @@ MAINTAINER Alexis Vincent "alexisjohnvincent@gmail.com"
 # Install.
 RUN \
   apt-get update && \
-  apt-get -y upgrade && \
-  apt-get install -y git htop man unzip vim wget && \
-  sudo apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  apt-get install -y git wget && \
+  apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set environment variables.
 ENV HOME /root
